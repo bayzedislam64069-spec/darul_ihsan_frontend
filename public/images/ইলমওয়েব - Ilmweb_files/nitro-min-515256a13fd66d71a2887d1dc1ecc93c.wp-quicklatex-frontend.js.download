@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){var e="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzUiIGhlaWdodD0iMjc1Ij48L3N2Zz4%3D";var a=document.createElement("img");a.setAttribute("src",e);a.addEventListener("load",function(){t("img.quicklatex-auto-format").attr("src",function(){return t(this).attr("src").replace(".png",".svg")})},true)});

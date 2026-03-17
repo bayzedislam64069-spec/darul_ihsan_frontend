@@ -1,0 +1,3 @@
+document.addEventListener("DOMContentLoaded",function(){var nitroBadge=document.querySelector('[data-nosnippet], .nitropack-powered');if(nitroBadge){nitroBadge.style.display="none"}
+var lastTemplate=document.querySelector("template:last-of-type");if(lastTemplate&&lastTemplate.id){document.getElementById(lastTemplate.id).style.display="none";var next1=document.getElementById(lastTemplate.id).nextElementSibling;var next2=next1?next1.nextElementSibling:null;if(next2)next2.style.display="none"}});<!-- Google Tag Manager(noscript)--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRTBV936"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager(noscript)-->
