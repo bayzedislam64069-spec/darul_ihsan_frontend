@@ -5,7 +5,7 @@ export const Logo = () => (
   <Link href="/" className="group flex items-center gap-3">
     <div className="rounded-full border border-border/60 bg-background/80 p-1.5 shadow-sm transition group-hover:shadow-md">
       <Image
-        src="/images/Darul_Ihsan.png"
+        src="/logo.jpeg"
         alt="Darul Ihsan Logo"
         width={48}
         height={48}
