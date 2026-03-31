@@ -1,10 +1,9 @@
-import CourseHighlights from "@/components/coursces/CourseHighlights";
-import React from "react";
+import CourseGrid from "./course-grid";
 
-export default function CoursePage() {
+export default function OurCourses() {
   return (
     <div>
-      <CourseHighlights />
+      <CourseGrid />
     </div>
   );
 }

@@ -15,53 +15,52 @@ import {
 import SectionShell from "@/components/shared/SectionShell";
 import SectionHeader from "@/components/shared/SectionHeader";
 
-const phone = "8801602867954";
+const phone = "8801924064069";
 
 const topFeatures = [
   {
-    icon: <BookOpenIcon className="h-6 w-6 text-emerald-500" />,
+    icon: BookOpenIcon,
     title: "Qur’an Recitation",
     description:
-      "Learn to recite the Qur’an accurately with Tajweed, guided by expert instruction and spiritual focus.",
+      "Learn to recite the Qur’an accurately with Tajweed under guided instruction.",
   },
   {
-    icon: <ScrollTextIcon className="h-6 w-6 text-yellow-500" />,
+    icon: ScrollTextIcon,
     title: "Surah & Dua Memorization",
     description:
-      "Memorize essential Surahs and authentic Masnoon Duas with correct pronunciation and understanding.",
+      "Memorize essential Surahs and authentic Duas with proper pronunciation.",
   },
   {
-    icon: <BookOpenIcon className="h-6 w-6 text-indigo-500" />,
+    icon: BookOpenIcon,
     title: "Tafsir with Translation",
     description:
-      "Explore the meanings of Qur’anic verses through simplified Tafsir and translation.",
+      "Understand Qur’anic meanings through simple Tafsir and translation.",
   },
   {
-    icon: <UsersIcon className="h-6 w-6 text-pink-500" />,
+    icon: UsersIcon,
     title: "Hadith for Daily Life",
-    description:
-      "Discover practical Hadiths that guide daily life, character, and spiritual growth.",
+    description: "Learn practical Hadith to improve daily life and character.",
   },
 ];
 
 const bottomFeatures = [
   {
-    icon: <ShieldCheckIcon className="h-6 w-6 text-blue-500" />,
+    icon: ShieldCheckIcon,
     title: "Aqeedah & Fiqh",
     description:
-      "Understand core beliefs and practical rulings for a confident Islamic lifestyle.",
+      "Understand core Islamic beliefs and essential rulings for daily life.",
   },
   {
-    icon: <EyeIcon className="h-6 w-6 text-teal-500" />,
+    icon: EyeIcon,
     title: "Hijab & Halal-Haram",
     description:
-      "Learn modesty, halal earnings, and ethical choices in everyday life.",
+      "Learn modesty, halal lifestyle, and correct Islamic practices.",
   },
   {
-    icon: <SparklesIcon className="h-6 w-6 text-purple-500" />,
-    title: "Protection-Based Learning",
+    icon: SparklesIcon,
+    title: "Spiritual Development",
     description:
-      "Strengthen spiritual protection through beneficial knowledge and practice.",
+      "Strengthen your Iman through knowledge, practice, and consistency.",
   },
 ];
 
@@ -70,81 +69,105 @@ export default function WomensCourse() {
     <SectionShell>
       <SectionHeader
         badge="For Sisters"
-        title="Six-Month Islamic Education Course for Women"
-        description="A comprehensive online program designed to help women grow in authentic Islamic knowledge, daily practice, and spiritual confidence."
+        title="Six-Month Islamic Course for Women"
+        description="A complete online program designed to build strong Islamic knowledge, daily practice, and spiritual confidence."
       />
 
+      {/* Top Section */}
       <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
+        {/* Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.45 }}
-          className="overflow-hidden rounded-[32px] border border-border/60 bg-background/80 shadow-[0_10px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl dark:shadow-[0_10px_40px_rgba(0,0,0,0.35)]"
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="overflow-hidden rounded-[28px] border border-[#e5e9ef] bg-white shadow-[0_12px_40px_rgba(0,0,0,0.08)]"
         >
           <div className="relative aspect-[4/3] w-full">
             <Image
               src="/images/w-5.jpg"
-              alt="Muslim woman attending online Islamic class"
+              alt="Women's Islamic Course"
               fill
               className="object-cover"
             />
           </div>
         </motion.div>
 
+        {/* Features */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {topFeatures.map((item, index) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.45, delay: index * 0.1 }}
-              className="rounded-3xl border border-border/60 bg-background/80 p-6 shadow-[0_10px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl dark:shadow-[0_10px_40px_rgba(0,0,0,0.35)]"
-            >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-muted">
-                {item.icon}
-              </div>
-              <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-              <p className="text-sm leading-7 text-muted-foreground">
-                {item.description}
-              </p>
-            </motion.div>
-          ))}
+          {topFeatures.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="rounded-[22px] border border-[#e5e9ef] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
+              >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#e8f6f2] text-[#005640]">
+                  <Icon className="h-6 w-6" />
+                </div>
+
+                <h3 className="mb-2 text-lg font-bold text-[#073f39]">
+                  {item.title}
+                </h3>
+
+                <p className="text-sm leading-7 text-[#66748b]">
+                  {item.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
 
-      <div className="mt-12 text-center">
-        <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {bottomFeatures.map((item, index) => (
+      {/* Bottom Features */}
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        {bottomFeatures.map((item, index) => {
+          const Icon = item.icon;
+
+          return (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.45, delay: index * 0.12 }}
-              className="rounded-3xl border border-border/60 bg-background/80 p-6 text-left shadow-[0_10px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl dark:shadow-[0_10px_40px_rgba(0,0,0,0.35)]"
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="rounded-[22px] border border-[#e5e9ef] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-muted">
-                {item.icon}
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#fff4d0] text-[#d4a514]">
+                <Icon className="h-6 w-6" />
               </div>
-              <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-              <p className="text-sm leading-7 text-muted-foreground">
+
+              <h3 className="mb-2 text-lg font-bold text-[#073f39]">
+                {item.title}
+              </h3>
+
+              <p className="text-sm leading-7 text-[#66748b]">
                 {item.description}
               </p>
             </motion.div>
-          ))}
-        </div>
+          );
+        })}
+      </div>
 
+      {/* CTA */}
+      <div className="mt-14 text-center">
         <Link
-          href={`https://wa.me/${phone}?text=I%20want%20to%20join%20the%20Women’s%20Islamic%20Education%20Course`}
+          href={`https://wa.me/${phone}?text=I want to join the Women's Islamic Course`}
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <Button className="rounded-full bg-emerald-600 px-8 text-white hover:bg-emerald-700">
-            Register via WhatsApp
+          <Button className="h-14 rounded-full bg-[#005640] px-10 text-lg font-bold text-[#f7d04f] shadow-[0_12px_30px_rgba(0,86,64,0.25)] transition-all hover:bg-[#004734]">
+            Register Now via WhatsApp
           </Button>
         </Link>
+
+        <p className="mt-4 text-sm text-[#66748b]">
+          Limited seats available • Enroll now to secure your place
+        </p>
       </div>
     </SectionShell>
   );

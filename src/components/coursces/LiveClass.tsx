@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Play,
-  MessageCircle,
   MonitorPlay,
   BookOpen,
   Users,
@@ -19,7 +18,7 @@ import SectionShell from "@/components/shared/SectionShell";
 import SectionHeader from "@/components/shared/SectionHeader";
 import { liveClassService } from "@/services/liveClass.service";
 
-const phone = "8801602867954";
+const phone = "8801924064069";
 
 type TLivePlatform = "ZOOM" | "GOOGLE_MEET" | "YOUTUBE";
 

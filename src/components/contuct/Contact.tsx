@@ -24,7 +24,7 @@ export default function ContactForm() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/anwarulkarim13@gmail.com",
+        "https://formsubmit.co/ajax/bayzedislam64069@gmail.com",
         {
           method: "POST",
           headers: {

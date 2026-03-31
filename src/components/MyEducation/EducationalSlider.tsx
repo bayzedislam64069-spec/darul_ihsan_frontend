@@ -6,26 +6,22 @@ import SectionShell from "@/components/shared/SectionShell";
 import SectionHeader from "@/components/shared/SectionHeader";
 
 const educationalSteps = [
-  {
-    title: "Hifz",
-    institution: "Ashraful Madaris Sutighata, Jessore",
-    image: "/images/h-5.jpg",
-  },
+  // {
+  //   title: "Hifz",
+  //   institution: "Ashraful Madaris Sutighata, Jessore",
+  //   image: "/images/h-5.jpg",
+  // },
   {
     title: "Mawlana Degree",
     institution: "Ummul Madaris Muinul Islam Hathazari Arabic University",
     image: "/images/Ummul Madaris Muinul Islam.jpg",
   },
-  {
-    title: "Ifta",
-    institution: "Darul Uloom Jatrabari, Dhaka",
-    image: "/images/h-7.jpg",
-  },
-  {
-    title: "Tafsir Studies",
-    institution: "Khulna Darul Uloom",
-    image: "/images/h-5.jpg",
-  },
+
+  // {
+  //   title: "Tafsir Studies",
+  //   institution: "Khulna Darul Uloom",
+  //   image: "/images/h-5.jpg",
+  // },
 ];
 
 export default function EducationalSlider() {

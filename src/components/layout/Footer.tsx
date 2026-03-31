@@ -85,10 +85,10 @@ export default function Footer() {
             <li>Khulna, Bangladesh</li>
             <li>
               <a
-                href="tel:+8801602867954"
+                href="tel:+8801924064069"
                 className="transition hover:text-white"
               >
-                +880 1602-867954
+                +880 1924-064069
               </a>
             </li>
             <li>
@@ -108,7 +108,7 @@ export default function Footer() {
 
           <div className="flex flex-wrap gap-3">
             <Link
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61581379570137&rdid=jCVxIdqpqapXtz2i#"
               aria-label="Facebook"
               className="rounded-2xl border border-white/10 bg-white/5 p-3 text-slate-300 backdrop-blur transition hover:-translate-y-1 hover:bg-blue-600 hover:text-white"
             >
@@ -154,7 +154,7 @@ export default function Footer() {
               href="tel:+8801602867954"
               className="transition hover:text-white"
             >
-              +880 1602-867954
+              +880 1924-064069
             </a>
           </p>
         </div>

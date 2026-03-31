@@ -14,7 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ Metadata (Global SEO + Logo)
 export const metadata: Metadata = {
   title: {
     default: "Darul Ihsan",

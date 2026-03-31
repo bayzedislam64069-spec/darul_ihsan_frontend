@@ -22,7 +22,7 @@ const TopNavber = () => {
           {/* Left */}
           <div className="flex items-center gap-2">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61581379570137&rdid=jCVxIdqpqapXtz2i#"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl border border-white/10 bg-white/5 p-2 text-slate-300 transition hover:-translate-y-0.5 hover:bg-blue-600 hover:text-white"
@@ -32,7 +32,7 @@ const TopNavber = () => {
             </a>
 
             <a
-              href="https://wa.me/8801602867954"
+              href="https://wa.me/8801924064069"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl border border-white/10 bg-white/5 p-2 text-slate-300 transition hover:-translate-y-0.5 hover:bg-green-600 hover:text-white"
@@ -40,7 +40,6 @@ const TopNavber = () => {
             >
               <MessageCircle className="h-4 w-4" />
             </a>
-
             <a
               href="https://youtube.com"
               target="_blank"
@@ -50,7 +49,6 @@ const TopNavber = () => {
             >
               <Youtube className="h-4 w-4" />
             </a>
-
             <a
               href="https://darulihsan.com"
               target="_blank"
@@ -89,7 +87,7 @@ const TopNavber = () => {
             </a>
 
             <a
-              href="https://wa.me/8801602867954"
+              href="https://wa.me/8801924064069"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl border border-white/10 bg-white/5 p-2 text-slate-300 transition hover:bg-green-600 hover:text-white"

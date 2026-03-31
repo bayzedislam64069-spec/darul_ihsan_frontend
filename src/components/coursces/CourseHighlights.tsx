@@ -6,7 +6,7 @@ import SectionShell from "@/components/shared/SectionShell";
 import SectionHeader from "@/components/shared/SectionHeader";
 import { ArrowRight } from "lucide-react";
 
-const phone = "8801602867954";
+const phone = "8801924064069";
 
 const courses = [
   {

@@ -1,25 +1,21 @@
 import ContactForm from "@/components/contuct/Contact";
-import CourseHighlights from "@/components/coursces/CourseHighlights";
 import LiveClass from "@/components/coursces/LiveClass";
 import OnlineClassInfo from "@/components/coursces/OnlineClassInfo";
-import DarulIhsanCourses from "@/components/coursces/OurCourse/CourseSection";
 import WomensCourse from "@/components/coursces/WomensIslamicCourse";
-import AboutAs from "@/components/layout/AboutAs";
 import HeroSlider from "@/components/layout/HeroSlider";
-import EducationalSlider from "@/components/MyEducation/EducationalSlider";
-import React from "react";
+import OurCourses from "./courses/page";
 
 const HomePage = () => {
   return (
     <div>
       <HeroSlider />
-      <CourseHighlights />
+      <OurCourses />
       <LiveClass />
-      <DarulIhsanCourses />
+      {/* <DarulIhsanCourses /> */}
       <WomensCourse />
       <OnlineClassInfo />
-      <AboutAs />
-      <EducationalSlider />
+      {/* <AboutAs /> */}
+      {/* <EducationalSlider /> */}
       <ContactForm />
     </div>
   );
